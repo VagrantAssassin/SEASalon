@@ -1,0 +1,67 @@
+<html>
+
+<style>
+body{
+	background-image: url('SalonBG.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+</style>
+
+<body background="SalonBG.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<div class="w3-bar w3-text-white">
+<button class="w3-bar-item w3-button" onclick="openKota('1')">Home</button>
+<button class="w3-bar-item w3-button" onclick="openKota('2')">Service</button>
+<button class="w3-bar-item w3-button" onclick="openKota('3')">Contact</button>
+</div>
+
+<div id="1" class="w3-container kota w3-animate-bottom w3-text-white" style="display:block">
+<center><br><br><br><br><br><br>
+<font size="7">SEA Salon</font>
+</div>
+
+<div id="2" class="w3-container kota w3-animate-bottom w3-text-white" style="display:none">
+<center>
+<h2>Service</h2>
+<br><br><br>
+<h3>Haircut and Styling</h3>
+<table style="width:100%">
+<tr><td style="width:30%"><center><img src="Haircut and Styling.jpeg" style="width:50%">
+</table>
+<br>
+<h3>Manicure and Pedicure</h3>
+<table style="width:100%">
+<tr><td style="width:30%"><center><img src="Manicure and Pedicure.jpg" style="width:50%">
+</table>
+<br>
+<h3>Facial Treatments</h3>
+<table style="width:100%">
+<tr><td style="width:30%"><center><img src="Facial Treatments.jpg" style="width:50%">
+</table>
+</div>
+
+<div id="3" class="w3-container kota w3-animate-bottom w3-text-white" style="display:none">
+<center>
+<h2>Contact</h2>
+<br>
+Thomas : 08123456789
+<br>
+Sekar : 08164829372
+</div>
+
+<script>
+function openKota(namakota) {
+var i;
+var x = document.getElementsByClassName("kota");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+document.getElementById(namakota).style.display = "block";
+}
+</script>
+
+</html>
