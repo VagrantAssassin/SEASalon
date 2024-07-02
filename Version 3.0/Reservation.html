@@ -1,0 +1,47 @@
+<html>
+
+<style>
+body{
+	background-image: url('SalonBG.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+</style>
+
+<body>
+
+<form action="reservation.php" method=post>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<div class="w3-bar w3-text-white">
+<a href="Dashboard.html" class="w3-btn w3-hover-white">Home</a>
+<a href="Review.html" class="w3-btn w3-hover-white">Review</a>
+<a href="Reservation.html" class="w3-btn w3-hover-white">Reservation</a>
+<a href="logout.php" class="w3-btn w3-hover-white">Logout</a>
+</div>
+
+<br><br>
+
+<div class="w3-container w3-white w3-animate-bottom w3-opacity-min">
+<br>
+
+<table>
+<tr><td>Nama <td>: <td><input name=nama size=12>
+<tr><td>Service <td>:<td>
+<select name=service>
+  <option>Haircut and Styling
+  <option>Manicure and Pedicure
+  <option>Facial Treatments
+<tr><td>No Telepon <td>: <td><input name=hp size=12>
+<tr><td>Tanggal Reservasi<td>: <td><input type="datetime-local" name=tanggal>
+</table>
+<hr>
+<input type=submit value=Proses>
+<input type=reset value=Reset>
+
+<br><br>
+</div>
+
+</html>

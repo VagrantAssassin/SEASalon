@@ -1,0 +1,54 @@
+<html>
+
+<style>
+body{
+	background-image: url('SalonBG.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+</style>
+
+<body>
+
+<form action="review.php" method=post>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<div class="w3-bar w3-text-white">
+<a href="Dashboard.html" class="w3-btn w3-hover-white">Home</a>
+<a href="Review.html" class="w3-btn w3-hover-white">Review</a>
+<a href="Reservation.html" class="w3-btn w3-hover-white">Reservation</a>
+<a href="logout.php" class="w3-btn w3-hover-white">Logout</a>
+</div>
+
+<br><br>
+
+<div class="w3-container w3-white w3-animate-bottom w3-opacity-min">
+<br>
+<table>
+<tr><td>Nama <td>: <td><input name=nama size=12>
+<tr><td>Bintang <td>: 
+<td>
+<input type=radio name=rating value=1>1
+<input type=radio name=rating value=2>2
+<input type=radio name=rating value=3>3
+<input type=radio name=rating value=4>4
+<input type=radio name=rating value=5>5
+<tr><td>Komentar <td>: <td><input name=komentar size=50>
+</table>
+<hr>
+<input type=submit value=Proses>
+<input type=reset value=Reset>
+<br><br>
+</div>
+
+<script>
+window.onload = function() {
+  var userId = "<?php echo $_SESSION['user_id']; ?>";
+  var userIdInput = document.getElementById("nama");
+  userIdInput.value = userId;
+};
+</script>
+
+</html>
